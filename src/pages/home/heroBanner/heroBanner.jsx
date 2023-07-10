@@ -3,7 +3,7 @@ import "./style.scss"
 
 const HeroBanner = () => {
   return (
-    <div>explore</div>
+    <div>Hero Banner</div>
   )
 }
 
