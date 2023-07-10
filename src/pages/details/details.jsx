@@ -1,10 +1,10 @@
 import React from 'react'
 import "./style.scss"
 
-const details = () => {
+const Details = () => {
   return (
     <div>details</div>
   )
 }
 
-export default details
+export default Details

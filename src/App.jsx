@@ -3,6 +3,13 @@ import {fetchDataFromApi} from "./utils/api"
 import { useSelector, useDispatch } from 'react-redux'
 import { getApiConfiguration } from './store/homeSlice';
 
+import Header from './components/header/header';
+import Footer from './components/footer/footer';
+import Home from './pages/home/home';
+import Details from './pages/details/details';
+import SearchResult from './pages/searchResult/searchResult';
+import Explore from './pages/explore/explore';
+import PageNotFound from './pages/404/pageNotFound';
 
 
 function App() {
