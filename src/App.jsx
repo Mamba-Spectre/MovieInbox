@@ -21,12 +21,17 @@ function App() {
     state.home);
 
   useEffect(() => {
-    apiTesting();
+    fetchApiConfig();
   }, []);
   
-  const apiTesting = () => {
-    fetchDataFromApi("/movie/popular").then((res) => {
+  const fetchApiConfig = () => {
+    fetchDataFromApi("/configuration").then((res) => {
       console.log(res);
+      const url = {
+        backdrop: res.image.secure_base_url + "original",
+        poster: res.image.secure_base_url + "original",
+        profile: res.image.secure_base_url + "original",
+      }
       dispatch(getApiConfiguration(res));
     });
   };
